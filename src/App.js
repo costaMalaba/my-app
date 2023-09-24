@@ -1,25 +1,43 @@
-import React, { Component } from 'react';
+import React from 'react';
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 import './App.css';
-import Header from './components/Header';
-import Nav from './components/Nav';
-import Main from './components/Main';
-import Footer from './components/Footer';
+import LandingPage from './components/LandingPage';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <LandingPage />
+  },
+]);
 
 
-class App extends Component {
-  render() {
+const App = () => {
     return (
       <div>
-        <Header />
+        {/* <div className='row'>
+          <div className='col'>
+            <Header />
+          </div>
 
-        <Nav />
+          <div className='col'>
+            <Nav />
+          </div>
 
-        <Main />
+          <div className='col'>
+            <Main />
+          </div>
 
-        <Footer />
+          <div className='col'>
+            <Footer />
+          </div>
+        </div> */}
+        <RouterProvider router={router} />
       </div>
     );
-  }
 }
 
 export default App;

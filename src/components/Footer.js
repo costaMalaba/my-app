@@ -7,17 +7,17 @@ const Footer = () => {
     <footer>
       <img src={logo} alt='Logo' />
 
-      <h2>Doormat navigation</h2>
+      <h4>Doormat navigation</h4>
       <Nav />
 
-      <h2>Contact</h2>
+      <h4>Contact</h4>
       <ul>
         <li>Address</li>
         <li>Phone number</li>
         <li>Email</li>
       </ul>
 
-      <h2>Social Media Links</h2>
+      <h4>Social Media Links</h4>
       <ul>
         <li>Address</li>
         <li>Phone number</li>
